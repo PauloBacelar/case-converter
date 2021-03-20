@@ -10,6 +10,7 @@ html {
   align-items: center;
   justify-content: center;
   font-family: "Martel", serif;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -24,6 +25,22 @@ p {
   font: 18px;
   margin: -20px 50px;
   color: #2b394a;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 75%;
+  outline: none;
+  font: 16pt "Karla", serif;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 500px;
+  resize: none;
 }
 
 @media only screen and (max-width: 450px) {
