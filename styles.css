@@ -1,0 +1,33 @@
+body,
+html {
+  background-color: #c5d0dd;
+  min-width: 270px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Martel", serif;
+}
+
+h1 {
+  color: #2b394a;
+  font: 60px "Karla", serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font: 18px;
+  margin: -20px 50px;
+  color: #2b394a;
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 50px;
+  }
+}
