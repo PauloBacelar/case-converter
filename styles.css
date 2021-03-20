@@ -34,17 +34,75 @@ p {
 }
 
 textarea {
-  width: 75%;
   outline: none;
-  font: 16pt "Karla", serif;
+  font: 16pt "Martel", serif;
   border-radius: 5px;
   padding: 10px;
   max-width: 500px;
   resize: none;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container div {
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fda5a4;
+  color: #0f0f0f;
+  border: none;
+  outline: none;
+  font: 14pt "Karla";
+  cursor: pointer;
+  transition: all linear 0.25s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2b394a;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  column-gap: 10px;
+  max-width: 200px;
+}
+
+#copy-to-copyboard {
+  background-color: #2b394a;
+  color: white;
+}
+
+#copy-to-copyboard:hover {
+  background-color: #fda5a4;
+  color: #0f0f0f;
+}
+
 @media only screen and (max-width: 450px) {
   h1 {
     font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: -275px;
+  }
+
+  .copy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
