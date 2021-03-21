@@ -13,6 +13,11 @@ function changePlaceholder(newPlaceholderTxt) {
   textArea.placeholder = newPlaceholderTxt;
 }
 
+function cleanPlaceholder() {
+  placeholder = "Type or paste your content here";
+  changePlaceholder(placeholder);
+}
+
 function getText() {
   return textArea.value;
 }
