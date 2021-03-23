@@ -1,18 +1,19 @@
 // Variables
 const capitalizedButton = document.querySelector("button#capitalized");
-const brokenText = getText().split();
-let newWord = "";
 
 // Event Listener
 capitalizedButton.addEventListener("click", () => {
+  let brokenText = text.split(" ");
+  let newWord = "";
+
   if (getText()) {
     for (let word of brokenText) {
       newWord +=
         word.charAt(0).toUpperCase() + word.substring(1, word.length) + " ";
     }
 
-    text = newWord;
-    changeTextArea(newWord);
+    text = newWord.trim();
+    changeTextArea(text);
     cleanPlaceholder();
   } else {
     placeholder = "Type Or Paste Your Content Here";
