@@ -2,11 +2,21 @@
 const upperCaseButton = document.querySelector("button#upper");
 const lowerCaseButton = document.querySelector("button#lower");
 
+// Functions
+function toLower() {
+  text = text.toLowerCase();
+  return text;
+}
+
+function toUpper() {
+  text = text.toUpperCase();
+  return text;
+}
+
 // Event Listeners
 upperCaseButton.addEventListener("click", () => {
   if (text) {
-    text = text.toUpperCase();
-    changeTextArea(text);
+    changeTextArea(toUpper());
     cleanPlaceholder();
   } else {
     placeholder = placeholder.toUpperCase();
@@ -16,8 +26,7 @@ upperCaseButton.addEventListener("click", () => {
 
 lowerCaseButton.addEventListener("click", () => {
   if (text) {
-    text = text.toLowerCase();
-    changeTextArea(text);
+    changeTextArea(toLower());
     cleanPlaceholder();
   } else {
     placeholder = placeholder.toLowerCase();
