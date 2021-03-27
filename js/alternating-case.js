@@ -18,6 +18,7 @@ alternatingCaseButton.addEventListener("click", () => {
   if (getText()) {
     toAlternating();
     changeTextArea(newText);
+    newText = "";
   } else {
     changePlaceholder("tYpE oR pAsTe yOuR cOnTenT hErE");
   }
