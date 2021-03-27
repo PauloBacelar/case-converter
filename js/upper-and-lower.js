@@ -19,8 +19,7 @@ upperCaseButton.addEventListener("click", () => {
     changeTextArea(toUpper());
     cleanPlaceholder();
   } else {
-    placeholder = placeholder.toUpperCase();
-    changePlaceholder(placeholder);
+    placeholder = changePlaceholder(textArea.placeholder.toUpperCase());
   }
 });
 
@@ -29,7 +28,6 @@ lowerCaseButton.addEventListener("click", () => {
     changeTextArea(toLower());
     cleanPlaceholder();
   } else {
-    placeholder = placeholder.toLowerCase();
-    changePlaceholder(placeholder);
+    placeholder = changePlaceholder(textArea.placeholder.toLowerCase());
   }
 });
