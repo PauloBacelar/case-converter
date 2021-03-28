@@ -20,7 +20,6 @@ function toInverse(txt) {
 inverseCaseButton.addEventListener("click", () => {
   if (getText()) {
     changeTextArea(toInverse(text));
-    a;
   } else {
     placeholder = changePlaceholder(toInverse(textArea.placeholder));
   }
